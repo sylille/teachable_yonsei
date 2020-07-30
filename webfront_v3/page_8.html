@@ -1,0 +1,87 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+
+		<title>배워보기</title>
+
+		<link rel="stylesheet" href="css/main.css"> 
+	</head>
+    
+	<body>
+
+        
+        <header>
+        <nav class="nav">
+        <ul>
+            <li><div class="before"><img src="asset/back.png"></div></li>
+            <li><div class="inner">3단계 다리사진을 모아라!</div></li>
+            <li><div class="stop"><img src="asset/home%20(1).png"></div></li>
+        </ul>
+        </nav>
+        </header>
+        <div class="opacity">
+                    </div>
+        <main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+            <img src="//:0" alt="" id="camera--output">
+
+		</main>
+        
+        <div class="buttonfamily">
+        <button id="camera--trigger" style="border: 0; background: transparent"><img src="asset/camerashoot.png"></button>
+            <a href="page_5_2.html"></a>
+        <!-- <progress class="mainbutton_deact" id="kot" min="0" max="100" value="0"></progress> -->
+        </div>
+        
+
+        <div class="overlay">
+        <div class="layer">
+            <img src="asset/guide4.png">
+        </div>
+        
+        <div class="secondmessage">
+            <p>주변에서 다리 사진을 8장 찍어서 모아줘!<br>
+얼굴 전체가 다 나오게 찍어줘야해~</p>
+        </div>
+        
+        <div class="explain2">
+            <ul>
+            <li>너무 가까워!</li>
+            <li>좋아</li>
+            <li>너무 멀어!</li>
+            </ul>
+        </div>
+        
+        <div class="nextb">
+        <img src="asset/%EC%82%AC%EA%B0%81%ED%98%95%203@2x.png">
+            <div class="shoot_button">
+                <a href="page_8_2.html">
+        <button class="nextbt" id="hide">사진찍기 
+            <img src="asset/camera.png"></button></a>
+        </div>
+        </div>
+        </div>
+		<!-- Camera App -->
+		<script src="js/Camera_app.js"></script> 
+	</body>
+     
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $(".overlay").hide();
+           $( ".opacity" ).css( "display", "none" );
+          });
+        });
+    </script>
+
+</html>

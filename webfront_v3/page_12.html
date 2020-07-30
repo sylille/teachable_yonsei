@@ -1,0 +1,65 @@
+<html lang=”en”>
+	<head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+
+		<title>배워보기</title>
+
+		<link rel="stylesheet" href="css/main.css"> 
+	</head>
+    
+	<body>
+
+        
+        <header>
+        <nav class="nav">
+        <ul>
+            <li><div class="before"><img src="asset/back.png"></div></li>
+            <li><div class="inner">테스트하기</div></li>
+            <li><div class="stop"><img src="asset/home%20(1).png"></div></li>
+        </ul>
+        </nav>
+        </header>
+        <div class="opacity">
+        <main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+            <img src="//:0" alt="" id="camera--output">
+
+		</main>
+        
+        
+        </div>
+
+        <div class="layer3">
+            <img id="imgchange" src="asset/nothing.png">
+        </div>
+        
+        <div class="fifthmessage">
+            <p id="detext">로딩 중!</p>
+        </div>
+
+		<!-- Camera App -->
+        <script src="js/teachable.js"></script>
+	</body>
+     
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> 
+    <script type="text/javascript"> 
+        
+    </script>
+
+</html>
