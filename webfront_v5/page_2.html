@@ -1,0 +1,79 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=0">
+
+		<title>배워보기</title>
+
+		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/queries.css">
+	</head>
+    
+	<body>
+
+        
+        <header>
+        <nav class="nav">
+        <ul>
+            <li><div class="before"><img src="asset/back.png"></div></li>
+            <li><div class="inner">동글이 키우는 법</div></li>
+            <li><div class="stop"><img src="asset/home%20(1).png"></div></li>
+        </ul>
+        </nav>
+        </header>
+        <div class="opacity">
+        <main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+            <img src="//:0" alt="" id="camera--output">
+
+		</main>
+
+        
+        
+        </div>
+
+        <div class="layer">
+            <img src="asset/guide.png">
+        </div>
+        
+        <div class="secondmessage">
+            <p>방금 태어난 인공지능 동글이에게 <br> 얼굴, 팔, 다리 사진을 만들어주세요!</p>
+        </div>
+        
+        <div class="explain">
+            <ul>
+            <li>얼굴을 찍어줘</li>
+            <li>팔을 찍어줘</li>
+            <li>다리를 찍어줘</li>
+            </ul>
+        </div>
+        
+        <div class="nextb">
+        <img src="asset/%EC%82%AC%EA%B0%81%ED%98%95%203@2x.png">
+            <div class="next_button">
+                <a href="page_2_2.html"><button class="nextbt">다음으로 <div class="smaller"> <img src="asset/next_path.png"></div></button></a>
+        </div>
+        </div>
+
+		<!-- Camera App -->
+		<script src="js/Camera_app.js"></script> 
+	</body>
+     
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $(".layer").hide();
+          });
+        });
+    </script>
+
+</html>
